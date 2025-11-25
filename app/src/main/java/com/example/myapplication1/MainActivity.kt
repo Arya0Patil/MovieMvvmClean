@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapplication1.ui.home.HomeScreen
+import com.example.myapplication1.ui.movieDetails.MovieDetailsScreen
 import com.example.myapplication1.ui.theme.MyApplication1Theme
 
 class MainActivity : ComponentActivity() {
@@ -23,7 +24,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyApplication1Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    HomeScreen(modifier = Modifier.safeContentPadding())
+//                    HomeScreen(modifier = Modifier.safeContentPadding())
+                    MovieDetailsScreen()
                 }
             }
         }
